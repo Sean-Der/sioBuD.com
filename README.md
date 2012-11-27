@@ -23,6 +23,11 @@ This also limits the amount of damage that can happen if the website is exploite
 conf/awful Goes into /etc/init.d/ this way I have awful spawn during init. It also 
 allows me to easily reload the site when editing it from vim.
 
+##CHICKEN
+CHICKEN is (chicken-bin) in Debian. 
+
+To install awful run (chicken-install awful directory-utils) you will need rw, so run this as root
+
 ##Awful config
 (conf/awful.conf conf/privileged.conf) are both located in /etc/awful
 
