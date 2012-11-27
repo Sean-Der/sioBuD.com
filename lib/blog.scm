@@ -41,5 +41,6 @@
 (define-page (regexp "/blog/.*")
 	(lambda (path)
 		(define blog-post (string-substitute "/blog/" "" path))
-		(set-page-title! "sioBuD.com")
-		(template `(div (@ (class "article")) ,(get-blog-post blog-post)))))
+				(set-page-title! (string-append "(sioBuD.com (Blog (" blog-post ")))"))
+		(template `(div (@ (class "article")) ,(get-blog-post blog-post))))
+	headers: (include-javascript "http://siobud.com/js/blog.js"))
