@@ -4,10 +4,10 @@
 
 ;Enable jQuery and then set the URL to the library
 (enable-ajax #t)
-(ajax-library "http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js")
+(ajax-library "/js/jquery.min.js")
 
 ;Set our stylesheets
-(page-css (list "http://siobud.com/css/siobud.css" "http://fonts.googleapis.com/css?family=Cinzel:400,700&family=Rokkitt"))
+(page-css (list "/css/siobud.css"))
 
 ;Set our charset and doctype
 (page-doctype "<!DOCTYPE html>")
