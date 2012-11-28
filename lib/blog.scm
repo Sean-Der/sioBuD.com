@@ -17,7 +17,7 @@
 			,(if (string=? blog-url (car (cdr (cdr n)))) 
 				`( 
 					(h1 (@ (id "blog-post-title1")) ,(car n))
-					(h2 (@ (id "blog-post-title2")) "\"" ,(car (cdr n)) "\"")
+					(h2 (@ (id "blog-post-title2")) ,(car (cdr n)))
 					,article)))) 
 			posts)
 )

@@ -229,3 +229,9 @@ nav ul ul ul {
 	padding: 1% 2.5%;
 	background: rgb(208, 210, 204);	
 }
+
+.centered-image:hover{
+	width: 95%;
+	padding: 1% 2.5%;
+	background: rgb(190, 192, 186);	
+}

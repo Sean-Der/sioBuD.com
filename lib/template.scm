@@ -3,12 +3,12 @@
 			(nav 
 				(ul
 					(li (a (@(href "/")) "Home"))
-					(li (a (@(href "#")) "Interests")
+					(li (a (@(href "javascript:void(0);")) "Interests")
 						(ul
 							(li (a (@(href "/interests/music")) "Music"))
 							(li (a (@(href "/interests/computing")) "Computing"))))
 					(li (a (@(href "/blog")) "Blog") )
-					(li (a (@(href "#")) "Résumé")
+					(li (a (@(href "javascript:void(0);")) "Résumé")
 						(ul
 							(li (a (@(href "/resume/")) "HTML"))
 							(li (a (@(href "/resume/resume.pdf")) "PDF"))))))
