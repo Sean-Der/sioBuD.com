@@ -50,7 +50,7 @@ table {
   font-family: 'Cinzel';
   font-style: normal;
   font-weight: 400;
-  src: local('Cinzel-Regular'), url(http://siobud.com/css/cinzel.ttf) format('truetype');
+  src: local('Cinzel-Regular'), url(http://siobud.com/css/cinzel-regular.ttf) format('truetype');
 }
 
 @font-face {
@@ -184,6 +184,11 @@ nav ul ul ul {
 	font-family: 'Rokkitt', serif
 }
 
+#welcome {
+	padding: 20px 10px;
+	padding-left: 70px;
+}
+
 .article {
 	padding: 10px 10px;
 }
@@ -211,11 +216,11 @@ nav ul ul ul {
 	font-size: 17px;
 }
 
-.article a {
+.article a, .fancyAnchor {
 	color: black;
 }
 
-.article a:hover {
+.article a:hover, .fancyAnchor:hover  {
 	color: blue;
 }
 
