@@ -1,4 +1,4 @@
 (define-page "/reload"
   (lambda ()
-	(reload-apps (awful-apps))
-    	""))
+  (reload-apps (awful-apps))
+      ""))

@@ -88,6 +88,7 @@ nav {
 	text-align: center;
 	width: 100%;
 	background: rgb(238, 240, 244);	
+	font-size: 18px;
 }
 
 nav ul ul {
@@ -170,13 +171,14 @@ nav ul ul ul {
 #about_me {
 	width: 120px;
 	float: right;
-	padding: 30px 15px;
+	padding: 20px 15px;
 	border-left: 1px dotted silver;
-	line-height: 120%;
+	line-height: 130%;
 }
 
 #name{
 	font-weight: 700;
+	font-size: 17px;
 }
 
 #content{
@@ -185,7 +187,7 @@ nav ul ul ul {
 }
 
 #welcome {
-	padding: 20px 10px;
+	padding: 8em 10px;
 	padding-left: 70px;
 }
 
@@ -229,6 +231,11 @@ nav ul ul ul {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	font-size: 25px;
+}
+
+.article h2 {
+	font-size: 30px;
 }
 
 .article strong {
@@ -263,4 +270,18 @@ nav ul ul ul {
 	width: 95%;
 	padding: 1% 2.5%;
 	background: rgb(190, 192, 186);	
+}
+
+.right-image{
+	padding: 1% 2%;
+	margin-left: 1em;
+	float: right;
+	background: rgb(190, 192, 186);	
+}
+
+#gravatar{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding: 3px;
+	background: black;
 }

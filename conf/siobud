@@ -1,23 +1,18 @@
 <VirtualHost *:80>
-	
+	DocumentRoot /home/sean/public_html/siobud.com/www
 	ProxyPass /css !
-	Alias /css /home/sean/public_html/siobud.com/www/css
-
 	ProxyPass /resume !
-	Alias /resume /home/sean/public_html/siobud.com/www/resume
-
 	ProxyPass /img !
-	Alias /img /home/sean/public_html/siobud.com/www/img
-
 	ProxyPass /js !
-	Alias /js /home/sean/public_html/siobud.com/www/js
-
 	ProxyPass /reload !
-	ProxyPass / http://localhost:8080/
+	ProxyPass /files !
 	
+	ProxyPass / http://localhost:8080/ retry=0
+	ProxyPassReverse / http://localhost:8080/ retry=0
+
 	Options -Indexes
 	CustomLog /home/sean/public_html/logs/siobud.com_access.log common
-  <IfModule mpm_itk_module>
- 		AssignUserId sean users
-  </IfModule>
+	<IfModule mpm_itk_module>
+  		AssignUserId sean users
+  	</IfModule>
 </VirtualHost>
