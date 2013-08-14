@@ -1,4 +1,3 @@
 (define article
-  `(
-    (p "No Info")
+  `( (p "No Info")
     ))
