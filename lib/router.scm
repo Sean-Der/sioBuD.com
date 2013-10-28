@@ -1,5 +1,5 @@
 ;This page is used as a router to include all our pages
-(use awful regex directory-utils slime) 
+(use awful regex directory-utils) 
 (enable-sxml #t)
 
 
