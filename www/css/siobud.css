@@ -240,10 +240,18 @@ nav ul ul ul {
 	width: 95%;
 	padding: 1% 2.5%;
 	background: rgb(208, 210, 204);
+    position: relative;
+    cursor: pointer;
+    left: 0px;
+    transition: 2s;
+    -webkit-transition: 2s;
 }
 .centered-image:hover{
 	background: rgb(190, 192, 186);
+    left: -200px;
+    width: 1300px;
 }
+
 .right-image{
 	padding: 1% 2%;
 	margin-left: 1em;

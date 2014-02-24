@@ -1,7 +1,7 @@
 (in-package #:siobud)
 
 (defun music ()
-  (with-templated-page (:title "(sioBuD.com (Interests (Music)))" :scripts ("centered-image.js"))
+  (with-templated-page (:title "(sioBuD.com (Interests (Music)))")
     ((:div :class "article")
         (:h1 "Music")
         (:br)
@@ -12,7 +12,7 @@
         (:p "My love for music began at a very young age. My parents had a large collection of music and I was introduced to Brian Eno, John Coltrane and Pink Floyd early on. I also am part of the lucky few that were on the internet during the heyday of Napster, XDCC and Soulseek. I was introduced to lots of music by chatting with other people and grabbed tons of music that I would have never heard of on my own. I am not going to try and justify downloading the music, but it did cause me to spend lots of money on vinyl ten years later.")
         (:p "I recently started collecting Vinyl also. Its a rewarding, but expensive hobby. You can check out my collection on my " ((:a :href "http://www.discogs.com/collection?user=Sean-Der") "Discogs") ". I have yet to find a new favorite record store after I moved, but am still looking. I try to avoid ordering vinyl online, while it does give you instant gratification nothing can compare to that feel when you find your grail in a crate of old records")
         (:h2 "My setup now")
-        ((:a :href "#") ((:img :alt "audio-setup" :class "centered-image" :src "/img/interests/music/audio-setup.jpg")))
+        ((:img :alt "audio-setup" :class "centered-image" :src "/img/interests/music/audio-setup.jpg"))
         (:h3 "Turntable")
         (:p "Right now I am currently using a AT-LP60 as a starter turntable, and it works well for my needs. I still have the factory stylus and belt on it, and don't plan on updating either soon. Its only flaw is the lack of a balance on the tonearm. I recently came came by a Marantz 1060 that has a dull stylus, it may have some other issues but I have yet to throw a scratched up LP on it. I may put some money into restoring this, or watch Craigslist to pick up a nicer turntable entirely")
         (:h3 "Receiver")
