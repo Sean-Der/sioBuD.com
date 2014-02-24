@@ -68,13 +68,9 @@ table {
 }
 /* End font defines */
 
-
-/* Set the background and fonts */
 body {
     font-family: 'Cinzel', serif;
-
-		min-height: 740px;
-
+    min-height: 740px;
     background: rgb(80, 85, 100);
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(35, 45, 65)), to(rgb(80, 85, 100)));
     background: -webkit-radial-gradient(rgb(35, 45, 65), rgb(80, 85, 100));
@@ -84,6 +80,7 @@ body {
     background: radial-gradient(rgb(35, 45, 65), rgb(80, 85, 100));
 }
 
+/* Navbar Begin */
 nav {
 	text-align: center;
 	width: 100%;
@@ -160,13 +157,13 @@ nav ul ul ul {
 	left: 100%;
 	top:0;
 }
-
+/* Navbar End */
 #frame{
-	background: rgb(246,246,248);
-	margin: 0 auto;
-  min-height: 700px;
-	width: 960px;
-	margin-top: 25px;
+    background: rgb(246,246,248);
+    margin: 0 auto;
+    min-height: 700px;
+    width: 960px;
+    margin-top: 25px;
 }
 
 #about_me {
@@ -187,6 +184,13 @@ nav ul ul ul {
 	font-family: 'Rokkitt', serif
 }
 
+#gravatar{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding: 3px;
+	background: black;
+}
+
 #welcome {
 	padding: 8em 10px;
 	padding-left: 70px;
@@ -200,33 +204,27 @@ nav ul ul ul {
 	font-size: 30px;
 	font-weight: 700;
 }
-
 .article h2 {
 	padding-top: .7em;
 	font-size: 22px;
 	font-weight: 700;
 }
-
 .article h3 {
 	padding-top: .5em;
 	font-weight: 700;
 	font-size: 20px;
 }
-
 .article p {
 	padding-bottom: .5em;
 	text-indent: 1em;
 	font-size: 17px;
 }
-
 .article a, .fancyAnchor {
 	color: black;
 }
-
 .article a:hover, .fancyAnchor:hover  {
 	color: blue;
 }
-
 .article .blog-post-summary {
 	padding-bottom: 0;
 	white-space: nowrap;
@@ -234,31 +232,8 @@ nav ul ul ul {
 	text-overflow: ellipsis;
 	font-size: 25px;
 }
-
-.article h2 {
-	font-size: 30px;
-}
-
 .article strong {
 	font-weight: 700;
-}
-
-#blog-post-title1{
-	padding-bottom: 0px;
-	margin-bottom: 0px;
-	font-size: 30px;
-	font-weight: 700px;
-}
-
-#blog-post-title2{
-	padding-top: 0px;
-	margin-top: 0px;
-	padding-bottom: 1em;
-	text-indent: 1em;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	font-size: 18px;
 }
 
 .centered-image{
@@ -266,13 +241,9 @@ nav ul ul ul {
 	padding: 1% 2.5%;
 	background: rgb(208, 210, 204);
 }
-
 .centered-image:hover{
-	width: 95%;
-	padding: 1% 2.5%;
 	background: rgb(190, 192, 186);
 }
-
 .right-image{
 	padding: 1% 2%;
 	margin-left: 1em;
@@ -280,9 +251,4 @@ nav ul ul ul {
 	background: rgb(190, 192, 186);
 }
 
-#gravatar{
-	margin-top: 1em;
-	margin-bottom: 1em;
-	padding: 3px;
-	background: black;
-}
+
