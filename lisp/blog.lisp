@@ -2,7 +2,7 @@
 
 (defvar *blog-posts-path* "/home/sean/public_html/siobud.com/lisp/blog/")
 (defparameter *blog-posts*  `(("My Workflow"  "" "my-workflow" "2014-02-23")
-                              ("Lisp And The Web " "" "building-a-blog-with-lisp")))
+                              ("Lisp And The Web " "" "lisp-web")))
 
 (defun blog ()
   (let ((blog-post (alexandria:when-let (url (third (split-sequence:split-sequence #\/ (hunchentoot:request-uri hunchentoot:*request*))))
