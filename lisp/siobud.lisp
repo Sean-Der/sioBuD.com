@@ -4,7 +4,7 @@
 
 (defun start-server ()
   (swank:create-server :style :spawn :dont-close t)
-  (hunchentoot:start (make-instance 'hunchentoot:easy-acceptor :port 4242))
+  (hunchentoot:start (make-instance 'hunchentoot:easy-acceptor :port 4242 :address "127.0.0.1"))
   (loop for (url fun) on *urls* by #'cddr
         :do (push (hunchentoot:create-prefix-dispatcher url fun) hunchentoot:*dispatch-table*)))
 
