@@ -72,9 +72,9 @@ table {
 /* Set the background and fonts */
 body {
     font-family: 'Cinzel', serif;
-    
+
 		min-height: 740px;
-    
+
     background: rgb(80, 85, 100);
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(35, 45, 65)), to(rgb(80, 85, 100)));
     background: -webkit-radial-gradient(rgb(35, 45, 65), rgb(80, 85, 100));
@@ -87,7 +87,7 @@ body {
 nav {
 	text-align: center;
 	width: 100%;
-	background: rgb(238, 240, 244);	
+	background: rgb(238, 240, 244);
 	font-size: 18px;
 }
 
@@ -105,18 +105,19 @@ nav ul {
 	display: inline-table;
 }
 nav ul:after {
-	content: ""; 
-	clear: both; 
+	content: "";
+	clear: both;
 	display: block;
 }
 
 nav ul li {
 	float: left;
+    cursor: pointer;
 }
 
 nav ul li a {
 	color: #757575;
-	display: block; 
+	display: block;
 	padding: 15px 60px;
 	padding-left: 0px;
 	text-decoration: none;
@@ -129,16 +130,16 @@ nav ul li a:hover {
 
 nav ul ul {
 	padding: 0;
-	position: absolute; 
+	position: absolute;
 	top: 100%;
-	background: rgb(238, 240, 244);	
+	background: rgb(238, 240, 244);
 	-webkit-box-shadow: 0 3px 3px #3c3c40;
 	-moz-box-shadow: 0 3px 3px #3c3c40;
 	box-shadow: 0 3px 3px #3c3c40;
 }
 
 nav ul ul li {
-	float: none; 
+	float: none;
 	position: relative;
 	}
 
@@ -148,7 +149,7 @@ nav ul ul li a {
 	padding-right: .5em;
 	text-align: left;
 	color: #757575;
-}	
+}
 
 nav ul ul li a:hover {
 	color: black;
@@ -156,7 +157,7 @@ nav ul ul li a:hover {
 
 nav ul ul ul {
 	position: absolute;
-	left: 100%; 
+	left: 100%;
 	top:0;
 }
 
@@ -263,20 +264,20 @@ nav ul ul ul {
 .centered-image{
 	width: 95%;
 	padding: 1% 2.5%;
-	background: rgb(208, 210, 204);	
+	background: rgb(208, 210, 204);
 }
 
 .centered-image:hover{
 	width: 95%;
 	padding: 1% 2.5%;
-	background: rgb(190, 192, 186);	
+	background: rgb(190, 192, 186);
 }
 
 .right-image{
 	padding: 1% 2%;
 	margin-left: 1em;
 	float: right;
-	background: rgb(190, 192, 186);	
+	background: rgb(190, 192, 186);
 }
 
 #gravatar{

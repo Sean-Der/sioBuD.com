@@ -1,6 +1,6 @@
 (in-package #:siobud)
 
-(defvar *urls* (list "/" 'main "/test" 'test))
+(defvar *urls* (list "/" 'main "/interests/computing" 'computing "/interests/music" 'music "/blog" 'blog))
 
 (defun start-server ()
   (swank:create-server :style :spawn :dont-close t)
