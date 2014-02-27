@@ -12,6 +12,8 @@
                                    "(sioBuD.com (Blog))"))
       (if blog-post
         (cl-who:htm ((:div :class "article")
+                     (:h1 (cl-who:str (first blog-post)))
+                     (:h2 (cl-who:str (second blog-post)))
                      (handler-case (first (mapcar #'eval (cl-who::tree-to-commands (read-from-string (alexandria:read-file-into-string (concatenate 'string *blog-posts-path*
                                                                                        (third blog-post)
                                                                                        ".lisp"))) nil)))
