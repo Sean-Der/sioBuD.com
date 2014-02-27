@@ -11,7 +11,11 @@
  (:p "The Lisp community is really welcoming, and has a lot of smart people in it. I have asked lots of question, and had even more arguments in #lisp on Freenode. I am also really lucky to work on Lisp full time at " ((:a :href "http://http://webcheckout.net/") "Webcheckout") ". So I am learning from people who have years of commercial Lisp wisdom.")
 
  (:h1 "Lets build a webapp!")
- (:p "")
+ (:h2 "Install SBCL")
+ (:pre (:code "
+apt-get install sbcl //Debian and derivatives (Ubuntu)
+pkg install sbcl //FreeBSD
+pacman -S sbcl //ArchLinux"))
  (:h2 "Install QuickLisp")
  (:p "QuickLisp is a tool you can use to easily install Common Lisp Libraries, it integrates with ASDF and is easy to use")
  (:pre  ((:code :class "language-bash") "sean@siobud: curl http://beta.quicklisp.org/quicklisp.lisp -O
