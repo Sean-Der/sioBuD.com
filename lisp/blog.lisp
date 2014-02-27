@@ -1,8 +1,8 @@
 (in-package #:siobud)
 
 (defvar *blog-posts-path* "/home/sean/public_html/siobud.com/lisp/blog/")
-(defparameter *blog-posts*  `(("My Workflow"  "" "my-workflow" "2014-02-23")
-                              ("Lisp And The Web " "" "lisp-web")))
+(defparameter *blog-posts*  `(("My Workflow"  "My Favorite Tools" "my-workflow" "2014-02-23")
+                              ("Lisp And The Web" "Building A Simple WebApp With Common Lisp" "lisp-web" "2014-02-27")))
 
 (defun blog ()
   (let ((blog-post (alexandria:when-let (url (third (split-sequence:split-sequence #\/ (hunchentoot:request-uri hunchentoot:*request*))))
@@ -13,7 +13,7 @@
       (if blog-post
         (cl-who:htm ((:div :class "article")
                      (:h1 (cl-who:str (first blog-post)))
-                     (:h2 (cl-who:str (second blog-post)))
+                     (:h2 (cl-who:str (second blog-post)) ((:span :style "font-style: italic") " - Published " (cl-who:str (fourth blog-post))))
                      (handler-case (first (mapcar #'eval (cl-who::tree-to-commands (read-from-string (alexandria:read-file-into-string (concatenate 'string *blog-posts-path*
                                                                                        (third blog-post)
                                                                                        ".lisp"))) nil)))
@@ -26,6 +26,6 @@
                         (loop for blog-entry in  *blog-posts*
                               :when (fourth blog-entry)
                               :do (cl-who:htm (:h2 (cl-who:str (first blog-entry)))
-                                              ((:p :class "blog-post-summary") (cl-who:str (second blog-entry)))
+                                              ((:p :class "blog-post-summary") (cl-who:str (second blog-entry)) ((:span :style "font-style: italic") " - Published " (cl-who:str (fourth blog-entry))))
                                               ((:p :class "blog-post-summary") ((:a :href (concatenate 'string "blog/" (third blog-entry))) "Read More"))
                                               (:br)))))))))
