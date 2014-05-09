@@ -189,6 +189,8 @@ nav ul ul ul {
 	margin-bottom: 1em;
 	padding: 3px;
 	background: black;
+    height: 80px;
+    width: 80px;
 }
 
 #welcome {
