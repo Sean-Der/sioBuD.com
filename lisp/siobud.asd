@@ -7,7 +7,8 @@
                #:hunchentoot
                #:split-sequence
                #:alexandria
-               #:cl-who)
+               #:cl-who
+               #:cl-sendmail)
   :components ((:file "package")
                (:file "template")
                (:file "computing")
