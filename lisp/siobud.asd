@@ -8,7 +8,8 @@
                #:split-sequence
                #:alexandria
                #:cl-who
-               #:cl-sendmail)
+               #:cl-sendmail
+               #:cl-markdown)
   :components ((:file "package")
                (:file "template")
                (:file "computing")

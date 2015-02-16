@@ -2,7 +2,8 @@
 
 (defvar *blog-posts-path* "/home/sean/public_html/siobud.com/lisp/blog/")
 (defparameter *blog-posts*  `(("My Workflow"  "My Favorite Tools" "my-workflow" "2014-02-23")
-                              ("Lisp And The Web" "Building A Simple WebApp With Common Lisp" "lisp-web" "2014-02-27")))
+                              ("Lisp And The Web" "Building A Simple WebApp With Common Lisp" "lisp-web" "2014-02-27")
+                              ("Exploring the SPA112" "Reverse Engineering the SPA112 to find the ping utilitiy" "exploring-spa112" "2014-02-16")))
 
 (defun render-blog-post ()
   (let ((comment-added-by (hunchentoot:parameter "comment-added-by"))
@@ -17,9 +18,11 @@
           (cl-who:htm ((:div :class "article")
                        (:h1 (cl-who:str (first blog-post)))
                        (:h2 (cl-who:str (second blog-post)) ((:span :style "font-style: italic") " - Published " (cl-who:str (fourth blog-post))))
-                       (handler-case (first (mapcar #'eval (cl-who::tree-to-commands (read-from-string (alexandria:read-file-into-string (concatenate 'string *blog-posts-path*
-                                                                                         (third blog-post)
-                                                                                         ".lisp"))) nil)))
+                       (handler-case (cl-who:str (cl-markdown:render-to-stream
+                                                   (cl-markdown:markdown (alexandria:read-file-into-string (concatenate 'string *blog-posts-path* (third blog-post) ".md"))
+                                                                         :stream nil)
+                                                   :html nil))
+
                          (error ()
                                 (cl-who:htm '((:h1 "Couldn't open blog post!")
                                               (:p "Well this shouldn't happen....")))))
