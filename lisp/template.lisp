@@ -27,5 +27,6 @@
                      (:br)
                      (:p ((:a :href "http://www.github.com/sean-der") "GitHub"))
                      (:p ((:a :href "http://www.discogs.com/collection?user=Sean-Der") "Discogs"))
+                     (:p ((:a :href "http://www.last.fm/user/sean-der") "Last.fm"))
                      (:p ((:a :href "mailto:sean@siobud.com") "Email")))
                 ((:div :id "content") ,(first content)))))
