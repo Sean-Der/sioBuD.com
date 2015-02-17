@@ -17,7 +17,8 @@
         (if blog-post
           (cl-who:htm ((:div :class "article")
                        (:h1 (cl-who:str (first blog-post)))
-                       (:h2 (cl-who:str (second blog-post)) ((:span :style "font-style: italic") " - Published " (cl-who:str (fourth blog-post))))
+                       ((:h2 :class "blog-title-h2") (cl-who:str (second blog-post))
+                                                     (:span " - Published " (cl-who:str (fourth blog-post))))
                        (handler-case (cl-who:str (cl-markdown:render-to-stream
                                                    (cl-markdown:markdown (alexandria:read-file-into-string (concatenate 'string *blog-posts-path* (third blog-post) ".md"))
                                                                          :stream nil)
@@ -27,8 +28,8 @@
                                 (cl-who:htm '((:h1 "Couldn't open blog post!")
                                               (:p "Well this shouldn't happen....")))))
                        ((:h1 :style "padding-top: 2em;") "Comments")
-
-                       ((:h1 :style "padding-top: 2em;") "Post your own comment"))
+                       ((:div :class "blog-comments-box"))
+                       (:h1 "Post your own comment"))
                        ((:div :style "padding: 2em; padding-top: 0em;")
                         (if comment-added-by
                           (cl-who:str (concatenate 'string

@@ -227,13 +227,6 @@ nav ul ul ul {
 .article a:hover, .fancyAnchor:hover  {
 	color: blue;
 }
-.article .blog-post-summary {
-	padding-bottom: 0;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	font-size: 25px;
-}
 .article strong {
 	font-weight: 700;
 }
@@ -261,4 +254,22 @@ nav ul ul ul {
 	background: rgb(190, 192, 186);
 }
 
+.article .blog-title-h2 {
+	padding-top: 0;
+	padding-bottom: 1em;
+}
+.blog-comments-box {
+        border-radius:10px;
+        opacity:0.5;
+        width: 103%;
+        min-height: 10em;
+        background-color: gray;
+}
+.article .blog-post-summary {
+	padding-bottom: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 25px;
+}
 
