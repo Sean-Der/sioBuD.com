@@ -21,8 +21,6 @@
                           (:li ((:a :href "/resume/resume.pdf") "PDF")))))))
             ((:div :id "frame")
                 ((:div :id "about_me")  ((:span :id "name") "Sean DuBois")
-                     (:p "Programmer")
-                     (:p "Audiophile")
                      ((:img :src "/img/gravatar.jpg" :id "gravatar"))
                      (:br)
                      (:p ((:a :href "http://www.github.com/sean-der") "GitHub"))
