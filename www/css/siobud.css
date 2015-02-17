@@ -273,3 +273,11 @@ nav ul ul ul {
 	font-size: 25px;
 }
 
+:not(pre) > code {
+	border: 1px solid black;
+	color: black;
+	padding-left: 3px;
+	padding-right: 3px;
+	background: rgb(212, 212, 212);
+}
+
