@@ -219,7 +219,18 @@ They give us a working traceroute+ping. You just access them like
 <img class="centered-image" src="../img/blog/exploring-spa112/diagnostics2.png" />
 
 
-#TODO
+#Digging Even Further
 
-binwalk says there are some squashfs images in the bin, I am going to see if I can build my own firmware with
-an ASP shell, but that is for another day :)
+So I have solved the problem at hand, but let us see if we can dig even further. I would really like to get
+a shell! binwalk says there are some squashfs images in the bin, I am going to see if I can build my own firmware with
+shell access.
+
+So using binwalk, I was able to extract the firmware running
+
+`binwalk -eM Payton_1.3.5_004p_102814_1321_pfmwr_bootldr.bin`
+
+and I found a squashfs image that is 8410145 bytes, this looks promising! However I ran into some trouble extracting it.
+I noticed that the 'magic number' for the file was `shsq` and after some googling I found this [patch](http://sourceforge.net/p/squashfs/patches/20/)
+
+I am currently using an OSX desktop and pulled it in via Homebrew, with the following [recipe](https://gist.github.com/Sean-Der/455a329c6c5b6d4f112e) that includes
+the linked patch. I am looking through the dump right now to see if I can find something that already evals input etc..
