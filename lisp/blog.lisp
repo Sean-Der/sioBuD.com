@@ -25,8 +25,8 @@
                                                    :html nil))
 
                          (error ()
-                                (cl-who:htm '((:h1 "Couldn't open blog post!")
-                                              (:p "Well this shouldn't happen....")))))
+                                (cl-who:htm (:h1 "Couldn't open blog post!")
+                                            (:p "Well this shouldn't happen...."))))
                        ((:h1 :style "padding-top: 2em;") "Comments")
                        ((:div :class "blog-comments-box"))
                        (:h1 "Post your own comment"))
