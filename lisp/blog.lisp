@@ -3,7 +3,8 @@
 (defvar *blog-posts-path* "/home/sean/public_html/siobud.com/lisp/blog/")
 (defparameter *blog-posts*  `(("My Workflow"  "My Favorite Tools" "my-workflow" "2014-02-23")
                               ("Lisp And The Web" "Building A Simple WebApp With Common Lisp" "lisp-web" "2014-02-27")
-                              ("Exploring the SPA112" "Inspecting firmware to find the ping utility" "exploring-spa112" "2015-02-16")))
+                              ("Exploring the SPA112" "Inspecting firmware to find the ping utility" "exploring-spa112" "2015-02-16")
+                              ("Installing fail2web" "Installing fail2web on Ubuntu 14.10" "installing-fail2web" "2015-03-15")))
 
 (defun render-blog-post ()
   (let ((comment-added-by (hunchentoot:parameter "comment-added-by"))
