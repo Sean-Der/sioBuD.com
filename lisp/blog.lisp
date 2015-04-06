@@ -1,6 +1,7 @@
 (in-package #:siobud)
 
-(defvar *blog-posts-path* "/home/sean/public_html/siobud.com/lisp/blog/")
+(defparameter sendmail::*sendmail* #P"/usr/sbin/sendmail")
+(defparameter *blog-posts-path* "/home/sean/public_html/siobud.com/lisp/blog/")
 (defparameter *blog-posts*  `(("My Workflow"  "My Favorite Tools" "my-workflow" "2014-02-23")
                               ("Lisp And The Web" "Building A Simple WebApp With Common Lisp" "lisp-web" "2014-02-27")
                               ("Exploring the SPA112" "Inspecting firmware to find the ping utility" "exploring-spa112" "2015-02-16")
