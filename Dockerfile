@@ -1,4 +1,4 @@
-FROM debian:stretch-slim
+FROM debian:sid-slim
 
 RUN apt-get update -q --fix-missing && \
     apt-get -y upgrade && \
