@@ -1,14 +1,7 @@
 sioBuD.com
 =========
 
-#Libraries and tools used
-* SBCL: http://www.sbcl.org/
-* Nginx: http://nginx.org/
-* highlight.js: http://highlightjs.org/
-* Hunchentoot: http://weitz.de/hunchentoot/
-* CL-WHO: http://weitz.de/cl-who/
-
-#License
+# License
 The MIT License (MIT)
 
 Copyright (c) 2013 Sean DuBois
