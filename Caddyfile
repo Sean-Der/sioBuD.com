@@ -1,2 +1,7 @@
-siobud.com
-tls sean@siobud.com
+siobud.com {
+    root * /srv
+    file_server
+}
+
+mail.siobud.com {
+}
