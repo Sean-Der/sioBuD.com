@@ -1,6 +1,15 @@
 siobud.com {
+    tls sean@siobud.com
     root * /srv
     file_server
+}
+
+b.siobud.com, broadcast-box.siobud.com {
+    reverse_proxy 172.19.0.1:8080
+}
+
+http://whip.siobud.com {
+    reverse_proxy 172.19.0.1:8080
 }
 
 mail.siobud.com {
