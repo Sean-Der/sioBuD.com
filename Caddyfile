@@ -13,4 +13,5 @@ http://whip.siobud.com {
 }
 
 mail.siobud.com {
+    tls sean@siobud.com
 }
